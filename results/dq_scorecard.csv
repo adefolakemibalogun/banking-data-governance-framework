@@ -1,0 +1,21 @@
+rule_id,dimension,table,rule,records_tested,records_failed,pass_pct,threshold_pct,status,severity,rule_owner
+DQ01,Uniqueness,transactions,transaction_id is unique,49500,0,100.0,100,Pass,High,Head of Payments Operations
+DQ02,Completeness,transactions,transaction_date is populated,49500,990,98.0,99.5,Fail,High,Head of Payments Operations
+DQ03,Validity,transactions,amount is greater than zero,49500,0,100.0,100,Pass,High,Head of Payments Operations
+DQ04,Timeliness,transactions,dated transactions fall inside the governed 2020-2023 reporting window,48510,1720,96.45,99.5,Fail,Medium,Head of Management Information
+DQ05,Consistency,transactions,derived year and month agree with transaction_date,48510,0,100.0,100,Pass,Medium,Head of Management Information
+DQ06,Uniqueness,customer_account,account_id appears once in the account master,1651,0,100.0,100,Pass,High,Head of Retail Operations
+DQ07,Completeness,customer_account,every account has an opening_date,1651,33,98.0,99.5,Fail,Medium,Head of Retail Operations
+DQ08,Validity,customer_account,account_balance is not negative,1651,10,99.39,99.5,Fail,High,Head of Finance Reporting
+DQ09,Consistency,customer_account,closed accounts carry a zero balance,74,74,0.0,100,Fail,High,Head of Retail Operations
+DQ10,Completeness,customer_account,every customer holds at least one account (monitored),1100,238,78.36,n/a,Monitor,Monitor,Head of Customer Onboarding
+DQ11,Consistency,customer_account,each customer has a single customer_type,1100,0,100.0,100,Pass,Medium,Head of Customer Onboarding
+DQ12,Referential integrity,loans,every loan links to an account in the account master,330,0,100.0,100,Pass,High,Head of Credit Operations
+DQ13,Consistency,loans,loan customer matches the account owner,330,0,100.0,100,Pass,High,Head of Credit Operations
+DQ14,Completeness,loans,loan start_date is populated,330,6,98.18,100,Fail,High,Head of Credit Operations
+DQ15,Validity,loans,estimated_end_date is after start_date,324,1,99.69,100,Fail,High,Head of Credit Operations
+DQ16,Consistency,loans,loan starts on or after the account opening date,313,18,94.25,100,Fail,Medium,Head of Credit Operations
+DQ17,Consistency,loans,no active or overdue loans sit on closed accounts,273,9,96.7,100,Fail,High,Head of Credit Risk
+DQ18,Timeliness,loans,active loans are not past their estimated end date at 2023-12-31,239,48,79.92,99,Fail,High,Head of Credit Risk
+DQ19,Conformity,loans,loan identifiers use the same numeric type as the account master,330,330,0.0,100,Fail,Low,Head of Data Management
+DQ20,Validity,loans,interest_rate is within the approved 1%-25% range,330,0,100.0,100,Pass,Medium,Head of Credit Risk
