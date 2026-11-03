@@ -1,0 +1,3 @@
+# Count SQL files in GitHub's language statistics.
+# The framework's logic is SQL; the Python files are optional helpers.
+*.sql linguist-detectable=true linguist-language=SQL
