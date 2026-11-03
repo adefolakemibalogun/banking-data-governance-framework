@@ -1,0 +1,21 @@
+rule_id,dimension,cde_id,table,rule,threshold_pct,severity,rule_owner
+DQ01,Uniqueness,CDE08,transactions,transaction_id is unique,100,High,Head of Payments Operations
+DQ02,Completeness,CDE09,transactions,transaction_date is populated,99.5,High,Head of Payments Operations
+DQ03,Validity,CDE11,transactions,amount is greater than zero,100,High,Head of Payments Operations
+DQ04,Timeliness,CDE09,transactions,dated transactions fall inside the governed 2020-2023 reporting window,99.5,Medium,Head of Management Information
+DQ05,Consistency,CDE09,transactions,derived year and month agree with transaction_date,100,Medium,Head of Management Information
+DQ06,Uniqueness,CDE03,customer_account,account_id appears once in the account master,100,High,Head of Retail Operations
+DQ07,Completeness,CDE07,customer_account,every account has an opening_date,99.5,Medium,Head of Retail Operations
+DQ08,Validity,CDE06,customer_account,account_balance is not negative,99.5,High,Head of Finance Reporting
+DQ09,Consistency,CDE05,customer_account,closed accounts carry a zero balance,100,High,Head of Retail Operations
+DQ10,Completeness,CDE01,customer_account,every customer holds at least one account (monitored),n/a,Monitor,Head of Customer Onboarding
+DQ11,Consistency,CDE02,customer_account,each customer has a single customer_type,100,Medium,Head of Customer Onboarding
+DQ12,Referential integrity,CDE12,loans,every loan links to an account in the account master,100,High,Head of Credit Operations
+DQ13,Consistency,CDE12,loans,loan customer matches the account owner,100,High,Head of Credit Operations
+DQ14,Completeness,CDE16,loans,loan start_date is populated,100,High,Head of Credit Operations
+DQ15,Validity,CDE17,loans,estimated_end_date is after start_date,100,High,Head of Credit Operations
+DQ16,Consistency,CDE16,loans,loan starts on or after the account opening date,100,Medium,Head of Credit Operations
+DQ17,Consistency,CDE13,loans,no active or overdue loans sit on closed accounts,100,High,Head of Credit Risk
+DQ18,Timeliness,CDE13,loans,active loans are not past their estimated end date at 2023-12-31,99,High,Head of Credit Risk
+DQ19,Conformity,CDE12,loans,loan identifiers use the same numeric type as the account master,100,Low,Head of Data Management
+DQ20,Validity,CDE15,loans,interest_rate is within the approved 1%-25% range,100,Medium,Head of Credit Risk
