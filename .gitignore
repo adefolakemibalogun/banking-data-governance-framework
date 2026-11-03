@@ -1,0 +1,3 @@
+data/bank.db
+__pycache__/
+*.xlsx
