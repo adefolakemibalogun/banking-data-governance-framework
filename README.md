@@ -103,15 +103,35 @@ flowchart LR
 
 ## Run it yourself
 
+The framework's logic is entirely SQL. You can run it by hand in any SQL tool, or let the optional helper scripts run everything in one go.
+
+### Option 1: SQL only
+
+1. Download [`banking-operations-mi.xlsx`](https://github.com/adefolakemibalogun/fola-balogun-analytics-portfolio/blob/main/Files/banking-operations-mi.xlsx) from the portfolio repository.
+2. Save these three sheets as CSV files and import them into a SQL tool such as **DB Browser for SQLite** (free) or **MySQL Workbench**:
+
+   | Sheet | Table name |
+   |---|---|
+   | Customer Portfolio | `customer_account` |
+   | Banking Operations | `transactions` |
+   | Loan Portfolio | `loans` |
+
+3. Rename the columns to lower case with underscores, e.g. *Customer ID* becomes `customer_id`. The full column list for each table is at the top of [`scripts/load_data.py`](scripts/load_data.py). Keep dates in `YYYY-MM-DD` format so the date rules work.
+4. Run [`sql/01_profiling.sql`](sql/01_profiling.sql), then each rule in [`sql/02_dq_rules.sql`](sql/02_dq_rules.sql). Each rule returns *records tested* and *records failed*.
+5. Run [`sql/03_exception_extracts.sql`](sql/03_exception_extracts.sql) to list the failing records for each rule.
+
+The rules are written for SQLite. In MySQL, everything runs as written except DQ19, which uses SQLite's `typeof()` function to check identifier types.
+
+### Option 2: automated (optional helper scripts)
+
+Three small helper scripts load the workbook, run every rule and write the results files:
+
 ```bash
 pip install -r requirements.txt
-# Download banking-operations-mi.xlsx from the portfolio repository's Files folder
 python scripts/load_data.py path/to/banking-operations-mi.xlsx   # builds data/bank.db
 python scripts/run_checks.py          # writes results/dq_scorecard.csv
 python scripts/extract_exceptions.py  # writes results/exceptions.csv (add --all for every record)
 ```
-
-Source workbook: [`Files/banking-operations-mi.xlsx`](https://github.com/adefolakemibalogun/fola-balogun-analytics-portfolio/blob/main/Files/banking-operations-mi.xlsx) in the portfolio repository.
 
 ## Repository structure
 
@@ -142,4 +162,4 @@ banking-data-governance-framework/
 
 ## Tools
 
-SQL (SQLite, portable to MySQL) · Python · DAMA-DMBOK data-quality dimensions · BCBS 239 · NDPA 2023. In professional work I apply the same approach with Collibra, Informatica Data Quality (IDQ) and Microsoft Purview.
+SQL (SQLite, portable to MySQL) · DAMA-DMBOK data-quality dimensions · BCBS 239 · NDPA 2023. Optional helper scripts run the SQL end to end. In professional work I apply the same approach with Collibra, Informatica Data Quality (IDQ) and Microsoft Purview.
