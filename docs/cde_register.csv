@@ -1,0 +1,18 @@
+cde_id,data_element,table.column,business_definition,why_critical,data_owner,data_steward,quality_dimensions,rules
+CDE01,Customer identifier,customer_account.customer_id,Unique reference for a customer relationship,Basis for customer counts and KYC coverage,Head of Customer Onboarding,Customer Data Steward,Uniqueness; Completeness,DQ10; DQ11
+CDE02,Customer type,customer_account.customer_type,"Segment of the customer: Individual, Small Business or Large Enterprise",Drives segment exposure and concentration reporting,Head of Customer Onboarding,Customer Data Steward,Consistency; Validity,DQ11
+CDE03,Account identifier,customer_account.account_id,Unique reference for an account held by a customer,Joins balances and loans to customers,Head of Retail Operations,Account Data Steward,Uniqueness,DQ06
+CDE04,Account type,customer_account.account_type,"Product type of the account (for example Savings, Checking, Business)",Product mix and balance reporting,Head of Retail Operations,Account Data Steward,Validity,
+CDE05,Account status,customer_account.account_status,"Lifecycle state of the account: Active, Inactive or Closed",Determines which balances count as live,Head of Retail Operations,Account Data Steward,Consistency; Validity,DQ09
+CDE06,Account balance,customer_account.account_balance,Ledger balance of the account at the extract date,Headline balance KPI and liquidity view,Head of Finance Reporting,Finance Data Steward,Validity; Accuracy,DQ08
+CDE07,Account opening date,customer_account.opening_date,Date the account was opened,Account age and loan date checks,Head of Retail Operations,Account Data Steward,Completeness,DQ07
+CDE08,Transaction identifier,transactions.transaction_id,Unique reference for a posted transaction,Prevents double counting of activity,Head of Payments Operations,Payments Data Steward,Uniqueness,DQ01
+CDE09,Transaction date,transactions.transaction_date,Value date of the transaction,Assigns activity to the correct reporting period,Head of Payments Operations,Payments Data Steward,Completeness; Timeliness; Consistency,DQ02; DQ04; DQ05
+CDE10,Transaction type,transactions.transaction_type,"Nature of the transaction: Deposit, Withdrawal, Transfer or Payment",Activity mix reporting,Head of Payments Operations,Payments Data Steward,Validity,
+CDE11,Transaction amount,transactions.amount,Value of the transaction in GBP,Transaction value KPI,Head of Payments Operations,Payments Data Steward,Validity; Accuracy,DQ03
+CDE12,Loan-to-account link,"loans.account_id, loans.customer_id",Account and customer the loan is booked against,Links credit exposure to customers and segments,Head of Credit Operations,Credit Data Steward,Referential integrity; Consistency; Conformity,DQ12; DQ13; DQ19
+CDE13,Loan status,loans.loan_status,"Repayment state of the loan: Active, Overdue or Paid Off",Overdue exposure and credit-risk reporting,Head of Credit Risk,Credit Data Steward,Consistency; Timeliness,DQ17; DQ18
+CDE14,Principal amount,loans.principal_amount,Original principal advanced under the loan,Loan portfolio KPI and exposure,Head of Credit Risk,Credit Data Steward,Validity; Accuracy,
+CDE15,Interest rate,loans.interest_rate,Contractual annual interest rate,Pricing and yield analysis,Head of Credit Risk,Credit Data Steward,Validity,DQ20
+CDE16,Loan start date,loans.start_date,Date the loan was drawn down,Loan age and vintage analysis,Head of Credit Operations,Credit Data Steward,Completeness; Consistency,DQ14; DQ16
+CDE17,Estimated end date,loans.estimated_end_date,Contractual maturity date of the loan,Maturity profile and status checks,Head of Credit Operations,Credit Data Steward,Validity,DQ15
