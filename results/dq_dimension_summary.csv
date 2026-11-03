@@ -1,0 +1,8 @@
+dimension,rules,rules_passed,records_tested,records_failed,pass_pct
+Completeness,3,0,51481,1029,98.0
+Conformity,1,0,330,330,0.0
+Consistency,6,3,50600,101,99.8
+Referential integrity,1,1,330,0,100.0
+Timeliness,2,0,48749,1768,96.37
+Uniqueness,2,2,51151,0,100.0
+Validity,4,2,51805,11,99.98
