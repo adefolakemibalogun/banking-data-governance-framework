@@ -1,0 +1,170 @@
+rule_id,record_id,detail,total_failures_for_rule
+DQ02,3005114,"amount=208.93, type=Transfer",990
+DQ02,3041968,"amount=79.36, type=Withdrawal",990
+DQ02,3038383,"amount=1774.1, type=Transfer",990
+DQ02,3041188,"amount=3204.45, type=Transfer",990
+DQ02,3039792,"amount=1575.63, type=Payment",990
+DQ02,3010612,"amount=379.76, type=Transfer",990
+DQ02,3006467,"amount=388.28, type=Deposit",990
+DQ02,3038354,"amount=2666.79, type=Withdrawal",990
+DQ02,3006895,"amount=320.63, type=Transfer",990
+DQ02,3048803,"amount=4409.64, type=Withdrawal",990
+DQ02,3048835,"amount=1266.59, type=Withdrawal",990
+DQ02,3037416,"amount=797.22, type=Deposit",990
+DQ02,3044040,"amount=4161.91, type=Transfer",990
+DQ02,3044382,"amount=4181.18, type=Transfer",990
+DQ02,3005310,"amount=149.29, type=Transfer",990
+DQ02,3048363,"amount=1596.6, type=Transfer",990
+DQ02,3026936,"amount=3676.32, type=Withdrawal",990
+DQ02,3006147,"amount=2688.64, type=Withdrawal",990
+DQ02,3016435,"amount=4418.87, type=Deposit",990
+DQ02,3011437,"amount=1360.46, type=Deposit",990
+DQ02,3026517,"amount=2348.06, type=Deposit",990
+DQ02,3023408,"amount=3317.56, type=Withdrawal",990
+DQ02,3010619,"amount=1495.88, type=Deposit",990
+DQ02,3005592,"amount=3494.24, type=Payment",990
+DQ02,3037509,"amount=1299.49, type=Transfer",990
+DQ04,3004383,date=2026-07-20,1720
+DQ04,3018250,date=2024-01-08,1720
+DQ04,3015768,date=2024-01-12,1720
+DQ04,3010840,date=2024-01-03,1720
+DQ04,3037589,date=2024-01-10,1720
+DQ04,3041039,date=2026-03-23,1720
+DQ04,3022841,date=2024-01-16,1720
+DQ04,3047490,date=2024-01-03,1720
+DQ04,3007700,date=2024-01-30,1720
+DQ04,3009836,date=2024-01-21,1720
+DQ04,3034245,date=2024-01-25,1720
+DQ04,3007098,date=2024-01-04,1720
+DQ04,3028897,date=2024-02-08,1720
+DQ04,3048709,date=2025-09-08,1720
+DQ04,3041013,date=2025-11-03,1720
+DQ04,3047115,date=2024-01-17,1720
+DQ04,3020096,date=2026-06-12,1720
+DQ04,3013228,date=2024-01-06,1720
+DQ04,3026581,date=2025-11-17,1720
+DQ04,3019030,date=2024-02-05,1720
+DQ04,3031261,date=2024-01-16,1720
+DQ04,3022851,date=2024-02-01,1720
+DQ04,3038665,date=2024-01-04,1720
+DQ04,3036611,date=2024-01-30,1720
+DQ04,3044705,date=2026-07-07,1720
+DQ07,201083,"status=Active, balance=32364.42",33
+DQ07,201253,"status=Active, balance=78877.32",33
+DQ07,200982,"status=Active, balance=168.24",33
+DQ07,200905,"status=Active, balance=60172.28",33
+DQ07,201033,"status=Active, balance=21893.19",33
+DQ07,201036,"status=Active, balance=99815.57",33
+DQ07,200687,"status=Closed, balance=62288.73",33
+DQ07,201149,"status=Active, balance=24309.2",33
+DQ07,200142,"status=Active, balance=66448.99",33
+DQ07,200070,"status=Active, balance=57405.83",33
+DQ07,201386,"status=Active, balance=98621.54",33
+DQ07,201400,"status=Active, balance=75822.77",33
+DQ07,201620,"status=Active, balance=83590.24",33
+DQ07,200326,"status=Active, balance=12971.96",33
+DQ07,200351,"status=Active, balance=41928.35",33
+DQ07,200216,"status=Inactive, balance=94878.4",33
+DQ07,201278,"status=Active, balance=297.26",33
+DQ07,201241,"status=Active, balance=55292.55",33
+DQ07,201112,"status=Active, balance=17831.08",33
+DQ07,201374,"status=Active, balance=25877.62",33
+DQ07,200090,"status=Active, balance=89098.68",33
+DQ07,201143,"status=Active, balance=52774.42",33
+DQ07,200549,"status=Active, balance=89949.16",33
+DQ07,200410,"status=Closed, balance=64077.31",33
+DQ07,200503,"status=Active, balance=60628.55",33
+DQ08,200012,"status=Inactive, balance=-384.45",10
+DQ08,201632,"status=Active, balance=-214.25",10
+DQ08,200739,"status=Active, balance=-486.68",10
+DQ08,200375,"status=Active, balance=-484.03",10
+DQ08,201411,"status=Active, balance=-347.33",10
+DQ08,200895,"status=Active, balance=-262.08",10
+DQ08,201070,"status=Active, balance=-451.22",10
+DQ08,200322,"status=Active, balance=-50.91",10
+DQ08,200836,"status=Active, balance=-233.87",10
+DQ08,201608,"status=Active, balance=-332.64",10
+DQ09,201559,balance=46035.26,74
+DQ09,201171,balance=51642.18,74
+DQ09,201014,balance=50946.19,74
+DQ09,201409,balance=23793.44,74
+DQ09,200182,balance=54673.13,74
+DQ09,201358,balance=79082.48,74
+DQ09,200207,balance=14415.32,74
+DQ09,200636,balance=72472.61,74
+DQ09,200511,balance=36038.1,74
+DQ09,200577,balance=41340.47,74
+DQ09,200687,balance=62288.73,74
+DQ09,200664,balance=96104.79,74
+DQ09,201643,balance=63417.47,74
+DQ09,201255,balance=58065.63,74
+DQ09,200522,balance=45129,74
+DQ09,201395,balance=1137.43,74
+DQ09,200678,balance=93932.94,74
+DQ09,200141,balance=86449.34,74
+DQ09,200735,balance=40808.96,74
+DQ09,200807,balance=94042.15,74
+DQ09,200138,balance=35239.9,74
+DQ09,201053,balance=97456.04,74
+DQ09,201552,balance=16958,74
+DQ09,201384,balance=80291.35,74
+DQ09,200337,balance=89663.23,74
+DQ14,400314,"status=Active, principal=74680.25",6
+DQ14,400183,"status=Active, principal=68151.05",6
+DQ14,400270,"status=Active, principal=77144.41",6
+DQ14,400052,"status=Active, principal=84790.28",6
+DQ14,400229,"status=Active, principal=21375.07",6
+DQ14,400037,"status=Active, principal=84938.36",6
+DQ15,400080,"start=2026-03-18, end=2024-05-30",1
+DQ16,400261,"loan_start=2021-02-20, account_opened=2021-12-17",18
+DQ16,400160,"loan_start=2021-07-09, account_opened=2021-08-19",18
+DQ16,400324,"loan_start=2021-01-22, account_opened=2021-02-20",18
+DQ16,400001,"loan_start=2021-04-10, account_opened=2021-12-02",18
+DQ16,400222,"loan_start=2021-05-11, account_opened=2022-01-14",18
+DQ16,400268,"loan_start=2021-04-17, account_opened=2021-11-02",18
+DQ16,400256,"loan_start=2021-04-04, account_opened=2021-08-12",18
+DQ16,400070,"loan_start=2022-06-21, account_opened=2025-11-08",18
+DQ16,400199,"loan_start=2021-03-25, account_opened=2021-03-29",18
+DQ16,400059,"loan_start=2022-09-29, account_opened=2026-04-08",18
+DQ16,400154,"loan_start=2021-05-11, account_opened=2021-12-03",18
+DQ16,400292,"loan_start=2021-06-09, account_opened=2022-01-12",18
+DQ16,400014,"loan_start=2021-07-30, account_opened=2021-08-21",18
+DQ16,400172,"loan_start=2021-08-13, account_opened=2021-12-11",18
+DQ16,400063,"loan_start=2021-07-18, account_opened=2021-10-09",18
+DQ16,400274,"loan_start=2023-01-23, account_opened=2025-10-16",18
+DQ16,400084,"loan_start=2021-03-23, account_opened=2021-04-19",18
+DQ16,400231,"loan_start=2021-07-06, account_opened=2021-07-21",18
+DQ17,400226,"loan_status=Active, account_id=201525",9
+DQ17,400160,"loan_status=Active, account_id=201504",9
+DQ17,400151,"loan_status=Active, account_id=201643",9
+DQ17,400201,"loan_status=Active, account_id=200414",9
+DQ17,400329,"loan_status=Active, account_id=201552",9
+DQ17,400163,"loan_status=Active, account_id=200728",9
+DQ17,400138,"loan_status=Active, account_id=201384",9
+DQ17,400091,"loan_status=Active, account_id=201053",9
+DQ17,400073,"loan_status=Active, account_id=201395",9
+DQ18,400233,"end=2023-07-30, principal=48596.76",48
+DQ18,400100,"end=2023-09-18, principal=9191.43",48
+DQ18,400323,"end=2023-11-18, principal=41206.98",48
+DQ18,400156,"end=2023-02-03, principal=86224.07",48
+DQ18,400017,"end=2023-10-20, principal=62585.34",48
+DQ18,400143,"end=2023-03-12, principal=4806.2",48
+DQ18,400202,"end=2023-10-24, principal=16092.64",48
+DQ18,400262,"end=2022-01-25, principal=46195.74",48
+DQ18,400032,"end=2023-04-04, principal=82144.49",48
+DQ18,400296,"end=2023-07-20, principal=64568.16",48
+DQ18,400069,"end=2023-12-29, principal=47566.87",48
+DQ18,400062,"end=2023-06-06, principal=79515.81",48
+DQ18,400324,"end=2023-08-21, principal=83919.49",48
+DQ18,400254,"end=2023-10-14, principal=87783.19",48
+DQ18,400180,"end=2023-08-15, principal=38913.5",48
+DQ18,400293,"end=2023-01-20, principal=70782.7",48
+DQ18,400313,"end=2023-10-30, principal=35479.87",48
+DQ18,400222,"end=2022-11-06, principal=3322.19",48
+DQ18,400203,"end=2023-06-05, principal=14254.2",48
+DQ18,400051,"end=2022-10-27, principal=58822.33",48
+DQ18,400118,"end=2023-09-14, principal=17211.8",48
+DQ18,400029,"end=2023-01-02, principal=3658.5",48
+DQ18,400071,"end=2022-11-23, principal=98478.6",48
+DQ18,400026,"end=2022-11-12, principal=36366.26",48
+DQ18,400329,"end=2023-05-20, principal=28696.43",48
